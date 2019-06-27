@@ -1,0 +1,180 @@
+:root {
+  --page-color: rgb(0, 0, 0);
+  --navbar-color: rgb(37, 37, 37);
+  --page-font: monospace;
+  --text-color: rgb(255, 255, 255);
+}
+
+body {
+  background: black;
+  font-family: var(--page-font, monospace);
+  font-weight: bold;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 75px;
+  display: flex;
+  justify-content: space-between;
+  background: var(--navbar-color, gray);
+  border: solid;
+  border-radius: 1px;
+  border-color: rgb(125, 125, 252);
+  font-size: 2vw;
+  z-index: 1;
+}
+
+#nav-bar {
+  margin-left: 40vw;
+  width: 60%;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav-element {
+  list-style: none;
+  width: 40%;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.nav-element a {
+  text-decoration: none;
+  color: var(--text-color, white);
+}
+
+#header-img {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 7vw;
+  height: auto;
+}
+
+#opener {
+  text-align: center;
+  height: 100%;
+  background: var(--page-color, lightgray);
+  padding-bottom: 40vh;
+}
+
+h1,
+h2 {
+  font-size: 1.5vw;
+  margin-top: 5vh;
+  color: var(--text-color);
+}
+
+#body-img {
+  position: relative;
+  top: 10vh;
+  width: 40%;
+  height: auto;
+}
+
+#video-part {
+  border: solid;
+  border-color: rgb(125, 125, 252);
+  padding-top: 55vh;
+  padding-bottom: 20vh;
+  text-align: center;
+  background: white;
+}
+
+#video-part h2 {
+  color: rgb(125, 125, 252);
+  font-size: 2.5vw;
+  margin-bottom: 0;
+}
+
+#video {
+  width: 50%;
+  height: 60vh;
+  margin-top: 10vh;
+}
+
+#email {
+  margin-top: 10vh;
+  border: solid;
+  border-radius: 2px;
+  border-color: rgb(125, 125, 252);
+  width: 20vw;
+  height: 5vh;
+  font-size: 1.5vw;
+}
+
+#submit {
+  display: block;
+  background-color: rgb(125, 125, 252);
+  font-size: 1.5vw;
+  font-weight: bold;
+  width: 10vw;
+  height: 7vh;
+  color: black;
+  border-color: white;
+  margin-top: 6vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#products {
+  margin-top: 40vh;
+}
+
+#products h2 {
+  margin-bottom: 10vh;
+}
+#product-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#product-container div {
+  width: 17vw;
+  height: 50vh;
+  background: lightgray;
+}
+
+#pricing {
+  display: flex;
+  justify-content: space-around;
+}
+
+#pricing h3 {
+  width: 17vw;
+  height: 10vh;
+  font-size: 2vw;
+}
+
+#footer {
+  background: rgb(125, 125, 252);
+  text-align: center;
+  font-size: 1.5vw;
+  height: 25vh;
+  padding-top: 1px;
+}
+
+@media (max-width: 70vw) {
+  #product-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #product-container div {
+    margin-left: 25vw;
+    width: 50vw;
+    height: 17vh;
+    background: lightgray;
+  }
+  #pricing {
+    color: white;
+  }
+}
